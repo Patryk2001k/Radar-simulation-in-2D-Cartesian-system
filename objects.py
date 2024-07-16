@@ -74,16 +74,8 @@ class Radar:
             print(f"Detected object at {point[0]}, {point[1]}")
 
 # Example of how we can use it
-world = World(100, 100)
-obj = Object(0, 0, 0, 1)
-world.add_object(obj)
-radar = Radar(0, 0, 20, 45, world)
-"""
-for _ in range(4):
-    print("-----------")
-    #print(obj.position_x)
-    #print(obj.position_y)
-    radar.rotate_and_scan()
-    world.update()
-    print("-----------")
-"""
+# world = World(100, 100)
+# obj = Object(0, 0, 0, 1)
+# world.add_object(obj)
+# radar = Radar(0, 0, 20, 45, world)
+
