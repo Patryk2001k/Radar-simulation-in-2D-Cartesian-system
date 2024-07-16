@@ -43,14 +43,17 @@ class Radar:
         return (x - self.center_x)**2 + (y - self.center_y)**2 <= self.radius**2
 
     def is_within_angle(self, x, y):
-        angle = math.degrees(math.atan2(y - self.center_y, x - self.center_x))
-        angle = (angle + 360) % 360
-        min_angle = self.current_angle
-        max_angle = (self.current_angle + self.angle_step) % 360
-        if min_angle < max_angle:
-            return min_angle <= angle <= max_angle
+        if x == 0 and y == 0:
+            return True
         else:
-            return min_angle <= angle or angle <= max_angle
+            angle = math.degrees(math.atan2(y - self.center_y, x - self.center_x))
+            angle = (angle + 360) % 360
+            min_angle = self.current_angle
+            max_angle = (self.current_angle + self.angle_step) % 360  
+            if min_angle < max_angle:
+                return min_angle <= angle <= max_angle
+            else:
+                return min_angle <= angle or angle <= max_angle
 
     def generate_points_in_sector(self):
         for x in range(self.center_x - self.radius, self.center_x + self.radius + 1):
@@ -58,16 +61,7 @@ class Radar:
                 if self.is_within_circle(x, y) and self.is_within_angle(x, y):
                     if (int(x), int(y)) in self.world.grid:
                         self.scanned_points.append((x, y, self.world.grid[(int(x), int(y))]))
-        center_point = 0
-        for i in self.scanned_points:
-            if i[0] == self.center_x and i[1] == self.center_y:
-                center_point = 1
-            else:
-                break
-        if center_point == 0:
-            if (int(self.center_x), int(self.center_y)) in self.world.grid:
-                    self.scanned_points.append((self.center_x, self.center_y, self.world.grid[(int(self.center_x), int(self.center_y))]))
-                                 
+                 
     def rotate_and_scan(self):
         self.scanned_points.clear()
         self.generate_points_in_sector()
@@ -79,5 +73,17 @@ class Radar:
         for point in self.scanned_points:
             print(f"Detected object at {point[0]}, {point[1]}")
 
-
-
+# Example of how we can use it
+world = World(100, 100)
+obj = Object(0, 0, 0, 1)
+world.add_object(obj)
+radar = Radar(0, 0, 20, 45, world)
+"""
+for _ in range(4):
+    print("-----------")
+    #print(obj.position_x)
+    #print(obj.position_y)
+    radar.rotate_and_scan()
+    world.update()
+    print("-----------")
+"""
