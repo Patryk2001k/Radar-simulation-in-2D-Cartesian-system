@@ -1,1 +1,73 @@
-# Radar-simulation-python
+## Radar Simulation in 2D Cartesian System
+
+Welcome to the Radar Simulation project! This repository contains the code to simulate a radar system in a 2D Cartesian plane using Python. The radar scans the environment, detects objects within a specified radius and angle, and displays the results. This project demonstrates the concepts of asynchronous programming, object-oriented design, and geometric computations.
+
+### Features
+
+- Simulate a 2D radar system scanning for objects.
+- Adjustable parameters for radar radius and angle step.
+- Asynchronous updates to the radar and world objects.
+- Visual output of detected objects.
+
+### Getting Started
+
+#### Prerequisites
+
+Ensure you have Python installed on your system. You can download it from [Python.org](https://www.python.org/).
+
+#### Installation
+
+1. Clone this repository:
+
+   ```sh
+   git clone https://github.com/yourusername/radar-simulation.git
+   cd radar-simulation
+   ```
+
+2. Install the required packages:
+
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+#### Running the Simulation
+
+1. Navigate to the project directory:
+
+   ```sh
+   cd radar-simulation
+   ```
+
+2. Run the simulation:
+
+   ```sh
+   python main.py
+   ```
+
+### Learn More
+
+For a detailed explanation of the code and the theory behind the radar simulation, check out our comprehensive blog post: [Radar Simulation in 2D Cartesian System](https://your-link-to-article)
+
+### How It Works
+
+- **World:** Represents the environment containing objects.
+- **Object:** Defines the properties and behavior of objects in the world.
+- **Radar:** Simulates a radar device, scanning the environment for objects within a certain radius and angle.
+
+### Potential Extensions
+
+- Integrate real-world radar physics for more accurate simulations.
+- Expand the simulation to a 3D environment.
+- Develop a graphical interface to visualize the radar and object movements.
+
+### Contributing
+
+We welcome contributions! Please fork this repository and submit a pull request to contribute.
+
+### License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+Happy coding! If you have any questions or feedback, feel free to open an issue or reach out via the contact details provided in the repository.
