@@ -55,7 +55,7 @@ class Radar:
             else:
                 return min_angle <= angle or angle <= max_angle
 
-    def generate_points_in_sector(self):
+    def detect_object(self):
         for x in range(self.center_x - self.radius, self.center_x + self.radius + 1):
             for y in range(self.center_y - self.radius, self.center_y + self.radius + 1):
                 if self.is_within_circle(x, y) and self.is_within_angle(x, y):
@@ -64,7 +64,7 @@ class Radar:
                  
     def rotate_and_scan(self):
         self.scanned_points.clear()
-        self.generate_points_in_sector()
+        self.detect_object()
         print(f"Scanning angle range: ({self.current_angle}, {(self.current_angle + self.angle_step) % 360})")
         self.display_scanned_points()
         self.current_angle = (self.current_angle + self.angle_step) % 360
