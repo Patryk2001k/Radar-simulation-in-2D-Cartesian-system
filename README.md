@@ -48,4 +48,4 @@ We welcome contributions! Please fork this repository and submit a pull request 
 
 ---
 
-Happy coding! If you have any questions or feedback, feel free to open an issue or reach out via the contact details provided in the repository.
+Happy coding! If you have any questions or feedback, feel free to open an issue or reach out via the contact details provided in the bottom of the blog post.
