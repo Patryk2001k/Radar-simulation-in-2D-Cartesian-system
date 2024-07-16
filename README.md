@@ -33,7 +33,7 @@ Welcome to the Radar Simulation project! This repository contains the code to si
 
 ### Learn More
 
-For a detailed explanation of the code and the theory behind the radar simulation, check out our comprehensive blog post: [Radar Simulation in 2D Cartesian System](https://your-link-to-article)
+For a detailed explanation of the code and the theory behind the radar simulation, check out our comprehensive blog post: [Radar Simulation in 2D Cartesian System](https://medium.com/@pat.gam/radar-simulation-in-2d-cartesian-system-python-782f03feaf26)
 
 ### How It Works
 
@@ -41,19 +41,10 @@ For a detailed explanation of the code and the theory behind the radar simulatio
 - **Object:** Defines the properties and behavior of objects in the world.
 - **Radar:** Simulates a radar device, scanning the environment for objects within a certain radius and angle.
 
-### Potential Extensions
-
-- Integrate real-world radar physics for more accurate simulations.
-- Expand the simulation to a 3D environment.
-- Develop a graphical interface to visualize the radar and object movements.
 
 ### Contributing
 
 We welcome contributions! Please fork this repository and submit a pull request to contribute.
-
-### License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
