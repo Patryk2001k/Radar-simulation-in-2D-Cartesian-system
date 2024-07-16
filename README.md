@@ -33,7 +33,7 @@ Welcome to the Radar Simulation project! This repository contains the code to si
 
 ### Learn More
 
-For a detailed explanation of the code and the theory behind the radar simulation, check out our comprehensive blog post: [Radar Simulation in 2D Cartesian System](https://medium.com/@pat.gam/radar-simulation-in-2d-cartesian-system-python-782f03feaf26)
+For a detailed explanation of the code and the theory behind the radar simulation, check out our comprehensive blog post i created: [Radar Simulation in 2D Cartesian System](https://medium.com/@pat.gam/radar-simulation-in-2d-cartesian-system-python-782f03feaf26)
 
 ### How It Works
 
