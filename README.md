@@ -9,25 +9,12 @@ Welcome to the Radar Simulation project! This repository contains the code to si
 - Asynchronous updates to the radar and world objects.
 - Visual output of detected objects.
 
-### Getting Started
-
-#### Prerequisites
-
-Ensure you have Python installed on your system. You can download it from [Python.org](https://www.python.org/).
-
 #### Installation
 
 1. Clone this repository:
 
    ```sh
    git clone https://github.com/yourusername/radar-simulation.git
-   cd radar-simulation
-   ```
-
-2. Install the required packages:
-
-   ```sh
-   pip install -r requirements.txt
    ```
 
 #### Running the Simulation
